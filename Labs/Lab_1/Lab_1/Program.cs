@@ -13,6 +13,8 @@ namespace Lab_1
 
         static void Main(string[] args)
         {
+            /////ТИПЫ/////
+
             //примитивный тип (primitive type)
             sbyte pt1 = 8;
             short pt2 = 16;
@@ -41,17 +43,78 @@ namespace Lab_1
             short etc1 = (short)pt6;
             int etc2 = (int)pt7;
             long etc3 = (long)pt8;
-            bool etc4 = (bool)pt15;
+            float etc4 = (float)pt12;
             short etc5 = (short)pt9;
 
+            //неявно типизированная переменная 
             var myList = new List<int>();
             myList.Add(1);
             myList.Add(2);
             myList.Add(3);
             foreach(var i in myList )
             {
-                Console.WriteLine(i);
+                Console.Write(i + " ");
             }
+            Console.WriteLine();
+
+            //Nullable
+            int? x1 = null;
+            Nullable<int> x2 = null;
+            Console.WriteLine(x1 == x2);
+
+
+            /////СТРОКИ/////
+
+            //Строковые литераллы
+            String path;
+            String path1;
+
+            path = "E:\\2 kurs\\ООП\\2-kurs";
+            path1 = "E:\\2 kurs";
+
+            Console.WriteLine(String.Compare(path, path1));
+
+            String line1 = "Hello ";
+            String line2 = "Big ";
+            String line3 = "World. I'm Denis.";
+
+            //Соединение строк
+            String contact = String.Concat(line1, line2, line3);
+            Console.WriteLine(contact);
+            Console.WriteLine();
+
+            //Выделение подстроки
+            String subs = contact.Substring(3, 8);
+            Console.WriteLine(subs);
+            Console.WriteLine();
+
+            //Копирование строки line3
+            String cop = String.Copy(line3);
+            Console.WriteLine(cop);
+            Console.WriteLine();
+
+            //Разделение строки на слова
+            Char delimiter = ' ';
+            String[] substrings = contact.Split(delimiter);
+            foreach (var substring in substrings)
+            {
+                Console.WriteLine(substring);
+            }
+            Console.WriteLine();
+
+            //Вставка подстроки на заданную позицию
+            Console.WriteLine(line2.Insert(2, subs));
+            Console.WriteLine();
+
+            //Удаление заданной подстроки
+            Console.WriteLine(line3.Remove(2, 6));
+            Console.WriteLine();
+
+            String line4 = "";
+            String line5 = null;
+
+            line4 = "new line";
+
 
         }
     }
