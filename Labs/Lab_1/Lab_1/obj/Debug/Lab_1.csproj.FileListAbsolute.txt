@@ -1,0 +1,6 @@
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1\Lab_1\bin\Debug\Lab_1.exe.config
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1\Lab_1\bin\Debug\Lab_1.exe
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1\Lab_1\bin\Debug\Lab_1.pdb
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1\Lab_1\obj\Debug\Lab_1.csprojResolveAssemblyReference.cache
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1\Lab_1\obj\Debug\Lab_1.exe
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1\Lab_1\obj\Debug\Lab_1.pdb
