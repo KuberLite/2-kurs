@@ -1,0 +1,9 @@
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1(2)\Lab_1(2)\bin\Debug\Lab_1(2).exe.config
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1(2)\Lab_1(2)\bin\Debug\Lab_1(2).exe
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1(2)\Lab_1(2)\bin\Debug\Lab_1(2).pdb
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1(2)\Lab_1(2)\obj\Debug\Lab_1(2).csprojResolveAssemblyReference.cache
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1(2)\Lab_1(2)\obj\Debug\Lab_1(2).csproj.CoreCompileInputs.cache
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1(2)\Lab_1(2)\obj\Debug\Lab_1(2).exe
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1(2)\Lab_1(2)\obj\Debug\Lab_1(2).pdb
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1(2)\Lab_1(2)\bin\Debug\System.ValueTuple.dll
+E:\2 kurs\ООП\2-kurs\Labs\Lab_1(2)\Lab_1(2)\bin\Debug\System.ValueTuple.xml

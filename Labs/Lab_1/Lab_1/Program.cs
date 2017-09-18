@@ -46,6 +46,11 @@ namespace Lab_1
             float etc4 = (float)pt12;
             short etc5 = (short)pt9;
 
+            //Упаковка и распаковка значимых типов
+            int pack = 25;
+            object obj = pack; //boxing
+            int unpack = (int)obj; //unboxing
+
             //неявно типизированная переменная 
             var myList = new List<int>();
             myList.Add(1);
@@ -112,10 +117,33 @@ namespace Lab_1
 
             String line4 = "";
             String line5 = null;
+            Console.WriteLine(line4);
+            Console.WriteLine(line5);
 
-            line4 = "new line";
+            //StringBuilder
+            StringBuilder sb = new StringBuilder("StringBuilder", 50);
+            Console.WriteLine(sb.Append(" AppendFormat"));//Добавление в конец строки
+            Console.WriteLine();
+            Console.WriteLine(sb.Remove(2, 14));
+            Console.WriteLine();
+            Console.WriteLine(sb.Insert(2, "GOOD"));
+            Console.WriteLine();
 
+            /////МАССИВЫ/////
 
+            //Массив-матрица
+            int[,] array = new int[4, 4];
+            Random rnd = new Random();
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    array[i, j] = rnd.Next(0, 25);
+                    Console.Write(array[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();            
         }
     }
 }
