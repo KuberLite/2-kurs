@@ -1,0 +1,7 @@
+C:\Users\KuberLite.Inc6\Desktop\lab3(Denis)\lab3(Denis)\obj\Debug\Lab_3(hard).csprojResolveAssemblyReference.cache
+C:\Users\KuberLite.Inc6\Desktop\lab3(Denis)\lab3(Denis)\obj\Debug\Lab_3(hard).csproj.CoreCompileInputs.cache
+C:\Users\KuberLite.Inc6\Desktop\lab3(Denis)\lab3(Denis)\bin\Debug\lab3(Denis).exe.config
+C:\Users\KuberLite.Inc6\Desktop\lab3(Denis)\lab3(Denis)\bin\Debug\lab3(Denis).exe
+C:\Users\KuberLite.Inc6\Desktop\lab3(Denis)\lab3(Denis)\bin\Debug\lab3(Denis).pdb
+C:\Users\KuberLite.Inc6\Desktop\lab3(Denis)\lab3(Denis)\obj\Debug\lab3(Denis).exe
+C:\Users\KuberLite.Inc6\Desktop\lab3(Denis)\lab3(Denis)\obj\Debug\lab3(Denis).pdb
