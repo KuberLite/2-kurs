@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Lab_3_hard_ {
     class Program {
         static void Main(string[] args) {
-            Triangle[] arr = new Triangle[10000];
+            Triangle[] arr = new Triangle[100000];
             Random randNum = new Random();
 
             //static readonly int Equilateral = 0;
