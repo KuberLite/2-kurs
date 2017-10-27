@@ -22,6 +22,7 @@ namespace Lab_4
         {            
             public Stack<int> myStack = new Stack<int>();
             public Stack<int> myStack2 = new Stack<int>();
+            public Stack<int> myStack3 = new Stack<int>();
 
             public int[] arr = new int[count_stack];
 
@@ -75,7 +76,7 @@ namespace Lab_4
 
                 for (int i = 0; i < count_stack; i++)
                 {
-                    Console.WriteLine(stack.arr[i]);
+                    Console.WriteLine("elem #" + i + ": " + stack.arr[i]);
                 }
 
                 
@@ -107,6 +108,7 @@ namespace Lab_4
             GetStack forstack = new GetStack();
             GetStack forstack2 = new GetStack();
             GetStack forstack3 = new GetStack();
+
             forstack = 3 + forstack;
 
             int count = 0;
@@ -138,7 +140,7 @@ namespace Lab_4
 
             //---------------------------------------
 
-            Console.WriteLine("Средний элемент #" + forstack.myStack.CountPoint());
+            Console.WriteLine("Средний элемент #" + forstack.myStack.CountPoint() + "\nКол-во строк в стеке: " + forstack.myStack.CountPointElem());
 
             MakeId.UnderMakeId owner = new MakeId.UnderMakeId();
 
@@ -163,8 +165,6 @@ namespace Lab_4
                 var date = DateTime.Today;
 
                 Console.WriteLine("ID = " + id + "\nName is " + name + "\nName of organization " + nameoforganization + "\nDate: " + date.ToString("D"));
-
-
             }
         }
     }
@@ -177,6 +177,11 @@ namespace Lab_4
             snum = num.Count() / 2;
             num.Push(snum);
             return snum;
+        }
+
+        static public int CountPointElem(this Stack<int> num)
+        {
+            return num.Count();
         }
     }
 }
