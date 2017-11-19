@@ -43,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassCount.cs" />
+    <Compile Include="PersonalDivideByZeroException.cs" />
+    <Compile Include="PersonalDllNotFoundException.cs" />
+    <Compile Include="PersonalException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
