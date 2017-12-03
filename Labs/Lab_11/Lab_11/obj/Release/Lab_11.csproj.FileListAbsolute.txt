@@ -1,0 +1,7 @@
+E:\2 kurs\ООП\2-kurs\Labs\Lab_11\Lab_11\bin\Release\Lab_11.exe.config
+E:\2 kurs\ООП\2-kurs\Labs\Lab_11\Lab_11\bin\Release\Lab_11.exe
+E:\2 kurs\ООП\2-kurs\Labs\Lab_11\Lab_11\bin\Release\Lab_11.pdb
+E:\2 kurs\ООП\2-kurs\Labs\Lab_11\Lab_11\obj\Release\Lab_11.csproj.CoreCompileInputs.cache
+E:\2 kurs\ООП\2-kurs\Labs\Lab_11\Lab_11\obj\Release\Lab_11.exe
+E:\2 kurs\ООП\2-kurs\Labs\Lab_11\Lab_11\obj\Release\Lab_11.pdb
+E:\2 kurs\ООП\2-kurs\Labs\Lab_11\Lab_11\obj\Release\Lab_11.csprojResolveAssemblyReference.cache

@@ -17,7 +17,7 @@ namespace Lab_2
         static void Main(string[] args)
         {
             Random randNum = new Random();
-            Triangle[] mas = new Triangle[1000];
+            Triangle[] mas = new Triangle[100];
             for (int i = 0; i < mas.Length; i++)
             {
                 Console.Write("\nTriangle #" + (i + 1) + ":\n");

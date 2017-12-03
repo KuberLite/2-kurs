@@ -5,3 +5,10 @@ E:\2 kurs\ООП\2-kurs\Labs\Lab_2\Lab_2\obj\Debug\Lab_2.csprojResolveAssemblyRe
 E:\2 kurs\ООП\2-kurs\Labs\Lab_2\Lab_2\obj\Debug\Lab_2.csproj.CoreCompileInputs.cache
 E:\2 kurs\ООП\2-kurs\Labs\Lab_2\Lab_2\obj\Debug\Lab_2.exe
 E:\2 kurs\ООП\2-kurs\Labs\Lab_2\Lab_2\obj\Debug\Lab_2.pdb
+E:\2 kurs\ООП\2-kurs\Labs\Lab_3(easy)\Lab_2\bin\Debug\Lab_2.exe.config
+E:\2 kurs\ООП\2-kurs\Labs\Lab_3(easy)\Lab_2\bin\Debug\Lab_2.exe
+E:\2 kurs\ООП\2-kurs\Labs\Lab_3(easy)\Lab_2\bin\Debug\Lab_2.pdb
+E:\2 kurs\ООП\2-kurs\Labs\Lab_3(easy)\Lab_2\obj\Debug\Lab_2.csprojResolveAssemblyReference.cache
+E:\2 kurs\ООП\2-kurs\Labs\Lab_3(easy)\Lab_2\obj\Debug\Lab_2.csproj.CoreCompileInputs.cache
+E:\2 kurs\ООП\2-kurs\Labs\Lab_3(easy)\Lab_2\obj\Debug\Lab_2.exe
+E:\2 kurs\ООП\2-kurs\Labs\Lab_3(easy)\Lab_2\obj\Debug\Lab_2.pdb
