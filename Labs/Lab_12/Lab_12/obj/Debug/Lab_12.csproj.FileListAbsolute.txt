@@ -1,0 +1,7 @@
+E:\2 kurs\ООП\2-kurs\Labs\Lab_12\Lab_12\bin\Debug\Lab_12.exe.config
+E:\2 kurs\ООП\2-kurs\Labs\Lab_12\Lab_12\bin\Debug\Lab_12.exe
+E:\2 kurs\ООП\2-kurs\Labs\Lab_12\Lab_12\bin\Debug\Lab_12.pdb
+E:\2 kurs\ООП\2-kurs\Labs\Lab_12\Lab_12\obj\Debug\Lab_12.csprojResolveAssemblyReference.cache
+E:\2 kurs\ООП\2-kurs\Labs\Lab_12\Lab_12\obj\Debug\Lab_12.csproj.CoreCompileInputs.cache
+E:\2 kurs\ООП\2-kurs\Labs\Lab_12\Lab_12\obj\Debug\Lab_12.exe
+E:\2 kurs\ООП\2-kurs\Labs\Lab_12\Lab_12\obj\Debug\Lab_12.pdb
