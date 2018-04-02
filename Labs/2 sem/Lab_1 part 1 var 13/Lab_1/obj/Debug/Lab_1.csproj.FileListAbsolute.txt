@@ -18,3 +18,13 @@ D:\2 kurs\2 sem\ООП\Lab_1 part 1 var 13\Lab_1\obj\Debug\Lab_1.pdb
 D:\2 kurs\2 sem\ООП\Lab_1 part 1 var 13\Lab_1\bin\Debug\Lab_1.exe.config
 D:\2 kurs\2 sem\ООП\Lab_1 part 1 var 13\Lab_1\bin\Debug\Lab_1.exe
 D:\2 kurs\2 sem\ООП\Lab_1 part 1 var 13\Lab_1\bin\Debug\Lab_1.pdb
+D:\2 kurs\2 sem\OOP\2-kurs\Labs\2 sem\Lab_1 part 1 var 13\Lab_1\bin\Debug\Lab_1.exe.config
+D:\2 kurs\2 sem\OOP\2-kurs\Labs\2 sem\Lab_1 part 1 var 13\Lab_1\bin\Debug\Lab_1.exe
+D:\2 kurs\2 sem\OOP\2-kurs\Labs\2 sem\Lab_1 part 1 var 13\Lab_1\bin\Debug\Lab_1.pdb
+D:\2 kurs\2 sem\OOP\2-kurs\Labs\2 sem\Lab_1 part 1 var 13\Lab_1\obj\Debug\Lab_1.csprojResolveAssemblyReference.cache
+D:\2 kurs\2 sem\OOP\2-kurs\Labs\2 sem\Lab_1 part 1 var 13\Lab_1\obj\Debug\Lab_1.Form1.resources
+D:\2 kurs\2 sem\OOP\2-kurs\Labs\2 sem\Lab_1 part 1 var 13\Lab_1\obj\Debug\Lab_1.Properties.Resources.resources
+D:\2 kurs\2 sem\OOP\2-kurs\Labs\2 sem\Lab_1 part 1 var 13\Lab_1\obj\Debug\Lab_1.csproj.GenerateResource.Cache
+D:\2 kurs\2 sem\OOP\2-kurs\Labs\2 sem\Lab_1 part 1 var 13\Lab_1\obj\Debug\Lab_1.csproj.CoreCompileInputs.cache
+D:\2 kurs\2 sem\OOP\2-kurs\Labs\2 sem\Lab_1 part 1 var 13\Lab_1\obj\Debug\Lab_1.exe
+D:\2 kurs\2 sem\OOP\2-kurs\Labs\2 sem\Lab_1 part 1 var 13\Lab_1\obj\Debug\Lab_1.pdb

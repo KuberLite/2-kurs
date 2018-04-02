@@ -22,7 +22,6 @@ namespace Lab_1
             delete_index_click += delete_index;
             length_click += lengthT;
             mas_click += mas;
-            //sqrt_click += sqrt;
             save_click += check;
         }
 
