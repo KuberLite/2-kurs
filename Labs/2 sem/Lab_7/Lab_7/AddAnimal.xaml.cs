@@ -31,6 +31,7 @@ namespace Lab_7
                 string sqlQuery = "insert into Animals (nameAnimal, classAnimal, age, receiptDate, curator, image) values ('" + animalName.Text + "','" + animalClass.Text + "','" + animalAge.Text + "','" + animalReceiptDate.Text + "','" + animalNameCurator.Text + "', @img)";
                 if (sqlCon.State != ConnectionState.Open) sqlCon.Open();
                 sqlCommand = new SqlCommand(sqlQuery, sqlCon);
+                sqlCommand.Parameters.AddWithValue("", animalClass.Text.Trim());
                 sqlCommand.Parameters.Add(new SqlParameter("@img", img));
                 int x = sqlCommand.ExecuteNonQuery();
                 sqlCon.Close();

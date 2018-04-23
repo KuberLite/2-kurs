@@ -13,6 +13,9 @@ namespace Lab_7
     {
         string sqlConnection;
         SqlConnection sqlCon;
+        DataTable dt;
+        SqlCommandBuilder commandBuilder;
+        SqlDataAdapter sqlDataAdapter;
 
         public MainWindow()
         {
@@ -65,9 +68,8 @@ namespace Lab_7
                 sqlCon.Open();
                 string selectQuery = "select Id[id], nameAnimal[Name Animal], classAnimal[Class Animal], age[Age], receiptDate[Receipt Date], curator[Curator] from Animals";
                 SqlCommand sqlCommand = new SqlCommand(selectQuery, sqlCon);
-                sqlCommand.ExecuteNonQuery();
-                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
-                DataTable dt = new DataTable("Animals");
+                sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+                dt = new DataTable("Animals");
                 sqlDataAdapter.Fill(dt);
                 animalGrid.ItemsSource = dt.DefaultView;
                 sqlDataAdapter.Update(dt);
@@ -144,8 +146,11 @@ namespace Lab_7
 
         private void buttonDelete_Click(object sender, RoutedEventArgs e)
         {
-            DeleteAnimal deleteAnimal = new DeleteAnimal();
-            deleteAnimal.Show();
+            //DeleteAnimal deleteAnimal = new DeleteAnimal();
+            //deleteAnimal.Show();
+            commandBuilder = new SqlCommandBuilder(sqlDataAdapter);
+            sqlDataAdapter.Update(dt);
+            MessageBox.Show("Update");
         }
 
         
