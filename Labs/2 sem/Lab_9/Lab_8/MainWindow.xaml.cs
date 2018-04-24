@@ -1,31 +1,44 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Data.Entity;
-using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
+using System.IO;
+using Lab_8.DAL.Entities;
+using System.Data.Entity;
+using System.Collections;
+using System.Collections.Generic;
+using Lab_8.DAL.Interfaces;
+using Lab_8.DAL.Repositories;
+using Lab_8.DAL.EF;
+using System.Linq;
+using System.ComponentModel;
 
 namespace Lab_8
 {
     public partial class MainWindow : Window
     {
-        DBContext dbContext;
+        private readonly IUnitOfWork _database;
 
         public MainWindow()
         {
             try
             {
                 InitializeComponent();
-                dbContext = new DBContext();
-                dbContext.Animals.Load();
-                animalsGrid.ItemsSource = dbContext.Animals.Local.ToBindingList();
+                _database = new UnitOfWork(new DAL.EF.DBContext());
+                FillTable();
+
+                this.Closing += MainWindow_Closing;
                 textBox.Text = null;
-                textBox2.Text = null;
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            this.Closing += MainWindow_Closing;
+        }
+
+        private void FillTable()
+        {
+            _database.context.Animals.Load();
+            animalsGrid.ItemsSource = _database.context.Animals.Local.ToBindingList();
         }
 
         private void transactionButton_Click(object sender, RoutedEventArgs e)
@@ -44,7 +57,7 @@ namespace Lab_8
                         var query = context.Animals.Where(p => p.age >= 5);
                         foreach (var post in query)
                         {
-                            post.nameAnimal += "SampleEdit";
+                            post.nameAnimal += "Sample Edit";
                         }
 
                         context.SaveChanges();
@@ -66,12 +79,12 @@ namespace Lab_8
         {   
             try
             {
-                if (textBox.Text != null && textBox2.Text != null)
+                string query = textBox.Text;
+                Animals result = _database.AnimalRepository.Search(query);
+                if (result != null)
                 {
-                    int qwe = Int32.Parse(textBox.Text);
-                    string asd = textBox2.Text;
-                    animalsGrid.ItemsSource = dbContext.Animals.Where(b => b.age == qwe).Where(a => a.nameAnimal == asd).ToList();
-                }                
+                    MessageBox.Show("Ages: " + result.age);
+                }
             }
             catch (Exception ex)
             {
@@ -79,47 +92,37 @@ namespace Lab_8
             }
         }
 
-        private void addButton1_Click(object sender, RoutedEventArgs e)
-        {
-            if (textBox.Text != null)
-            {
-                int qwe = Int32.Parse(textBox.Text);
-                animalsGrid.ItemsSource = dbContext.Animals.Where(a => a.age == qwe).ToList();
-                textBox.Text = null;
-            }
-
-        }
-
         private void MainWindow_Closing(object sender, CancelEventArgs e)
         {
-            dbContext.Dispose();
+            _database.context.Dispose();
         }
 
         private void updateButton_Click(object sender, RoutedEventArgs e)
         {
-            dbContext.SaveChanges();
+            _database.context.SaveChanges();
             MessageBox.Show("OK");
+        }
+
+        private List<Animals> GetSelectedAnimals(IList selectedItems)
+        {
+            List<Animals> animals = new List<Animals>();
+            foreach (var item in selectedItems)
+            {
+                Animals animal = item as Animals;
+                animals.Add(animal);
+            }
+            return animals;
         }
 
         private void deleteButton_Click(object sender, RoutedEventArgs e)
         {
-            if (animalsGrid.SelectedItems.Count > 0)
-            {
-                for(int i = 0; i < animalsGrid.SelectedItems.Count; i++)
-                {
-                    Animals animals = animalsGrid.SelectedItems[i] as Animals;
-                    if(animals != null)
-                    {
-                        dbContext.Animals.Remove(animals);
-                    }
-                }
-            }
-            dbContext.SaveChanges();
+            List<Animals> animals = GetSelectedAnimals(animalsGrid.SelectedItems);
+            _database.AnimalRepository.DeleteRange(animals);
         }
 
         private void showButton_Click(object sender, RoutedEventArgs e)
         {
-            animalsGrid.ItemsSource = dbContext.Animals.Local.ToBindingList();
+            animalsGrid.ItemsSource = _database.context.Animals.Local.ToBindingList();
         }
     }
 }
