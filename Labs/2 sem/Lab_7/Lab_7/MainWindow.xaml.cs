@@ -146,14 +146,9 @@ namespace Lab_7
 
         private void buttonDelete_Click(object sender, RoutedEventArgs e)
         {
-            //DeleteAnimal deleteAnimal = new DeleteAnimal();
-            //deleteAnimal.Show();
-            commandBuilder = new SqlCommandBuilder(sqlDataAdapter);
-            sqlDataAdapter.Update(dt);
-            MessageBox.Show("Update");
-        }
-
-        
+            DeleteAnimal deleteAnimal = new DeleteAnimal();
+            deleteAnimal.Show();
+        }        
 
         private void ButtonUp_Click(object sender, RoutedEventArgs e)
         {
