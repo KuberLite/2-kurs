@@ -1,0 +1,26 @@
+﻿<Window x:Class="laba_12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:laba_12"
+        mc:Ignorable="d"
+        Title="Some_Game" Height="343" Width="825">
+    <Grid Height="308" VerticalAlignment="Top" >
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="153" Stroke="Black" VerticalAlignment="Top" Width="158"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="153" Stroke="Black" VerticalAlignment="Top" Width="158" Margin="0,154,0,0"/>
+        <Button Content="создать" HorizontalAlignment="Left" Margin="1,87,0,0" VerticalAlignment="Top" Width="153" Height="44" Click="CreateCircle_Click"/>
+        <Label Content="Создать круг" HorizontalAlignment="Left" Margin="44,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Создать квадрат" HorizontalAlignment="Left" Margin="44,172,0,0" VerticalAlignment="Top"/>
+        <Button Content="создать" HorizontalAlignment="Left" Margin="3,231,0,0" VerticalAlignment="Top" Width="153" Height="44" Click="CreateRect_Click"/>
+        <TextBox Name="Console_Txb" HorizontalAlignment="Left" Height="106" Margin="163,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="644" Text="Всего объектов: 0"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="153" Stroke="Black" VerticalAlignment="Top" Width="158" Margin="160,154,0,0"/>
+        <Label Content="Создать ромб" HorizontalAlignment="Left" Margin="204,172,0,0" VerticalAlignment="Top"/>
+        <Button Content="создать" HorizontalAlignment="Left" Margin="163,253,0,0" VerticalAlignment="Top" Width="153" Height="44" Click="CreateRhombus_Click"/>
+        <TextBox  Name="Rhomb_Txb" HorizontalAlignment="Left" Height="34" Margin="163,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="443,279,0,0" VerticalAlignment="Top" Width="75" Click="AddBuilder_Click"/>
+        <TextBox Name="list_txb" HorizontalAlignment="Left" Height="102" Margin="384,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <Button Content="копировать" HorizontalAlignment="Left" Height="21" Margin="643,276,0,0" VerticalAlignment="Top" Width="121" Click="Button_Click"/>
+
+    </Grid>
+</Window>
