@@ -1,30 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace laba_12.AbstractFactory
 {
     abstract class Objects
     {  
-            public abstract void draw();
+            public abstract void draw(TextBox textBox);
     }
 
     class Circle : Objects
     {
-        public override void draw()
+        public override void draw(TextBox textBox)
         {
-            MessageBox.Show("Создан круг");
+            textBox.Text = "Created circle";
         }
     }
 
     class Rect : Objects
     {
-        public override void draw()
+        public override void draw(TextBox textBox)
         {
-            MessageBox.Show("Создан квадрат");
+            textBox.Text = "Created square";
         }
     }
 
@@ -59,9 +55,9 @@ namespace laba_12.AbstractFactory
             objects = factory.Objects();
         }
 
-        public void draw()
+        public void draw(TextBox textBox)
         {
-            objects.draw();
+            objects.draw(textBox);
         }
      }
 

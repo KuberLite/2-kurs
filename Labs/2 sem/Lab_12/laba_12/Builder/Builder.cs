@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 
 namespace laba_12.Builder
 {
@@ -28,9 +27,7 @@ namespace laba_12.Builder
     {
       
         public Flour Flour { get; set; }
-        // соль
         public Salt Salt { get; set; }
-        // пищевые добавки
         public Additives Additives { get; set; }
         public override string ToString()
         {
@@ -39,13 +36,12 @@ namespace laba_12.Builder
             if (Flour != null)
                 sb.Append(Flour.Sort + "\n");
             if (Salt != null)
-                sb.Append("Объект: "+Salt.Name);
+                sb.Append("Object: " + Salt.Name);
             
             return sb.ToString();
         }
     }
 
-    // абстрактный класс строителя
     abstract class BreadBuilder
     {
         public Bread Bread { get; private set; }
@@ -74,17 +70,17 @@ namespace laba_12.Builder
     {
         public override void SetFlour()
         {
-            this.Bread.Flour = new Flour { Sort = "Добавлен объект с помощью паттерна строитель" };
+            this.Bread.Flour = new Flour { Sort = "Added object with builder pattern" };
         }
 
         public override void SetSalt()
         {
-            this.Bread.Salt = new Salt { Name="Треугольник" };
+            this.Bread.Salt = new Salt { Name = "Triangle" };
         }
 
         public override void SetAdditives()
         {
-            // не используется
+            //not use
         }
     }
     

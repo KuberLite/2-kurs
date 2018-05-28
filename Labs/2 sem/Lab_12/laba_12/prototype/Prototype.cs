@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace laba_12.prototype
 {
-
-
     interface IFigure
     {
         IFigure Clone();
-        void GetInfo();
+        void GetInfo(TextBox textBox);
     }
 
     class Rectangle : IFigure
@@ -25,9 +24,9 @@ namespace laba_12.prototype
         {
             return new Rectangle(this.width, this.height);
         }
-        public void GetInfo()
+        public void GetInfo(TextBox textBox)
         {
-            MessageBox.Show("Прямоугольник длиной " + height.ToString()+  " и шириной "+ width.ToString());
+            MessageBox.Show("Height of rectangle " + height.ToString() + " and width of rectanle " + width.ToString());
         }
     }
 
@@ -43,9 +42,10 @@ namespace laba_12.prototype
         {
             return new Circle(this.radius);
         }
-        public void GetInfo()
+
+        public void GetInfo(TextBox textBox)
         {
-            MessageBox.Show("Круг радиусом "+ radius.ToString());
+            MessageBox.Show("Radius of circle: " + radius.ToString());
         }
     }
 }

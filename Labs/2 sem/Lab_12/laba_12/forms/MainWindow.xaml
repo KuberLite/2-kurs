@@ -5,22 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:laba_12"
         mc:Ignorable="d"
-        Title="Some_Game" Height="343" Width="825">
-    <Grid Height="308" VerticalAlignment="Top" >
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="153" Stroke="Black" VerticalAlignment="Top" Width="158"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="153" Stroke="Black" VerticalAlignment="Top" Width="158" Margin="0,154,0,0"/>
-        <Button Content="создать" HorizontalAlignment="Left" Margin="1,87,0,0" VerticalAlignment="Top" Width="153" Height="44" Click="CreateCircle_Click"/>
-        <Label Content="Создать круг" HorizontalAlignment="Left" Margin="44,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Создать квадрат" HorizontalAlignment="Left" Margin="44,172,0,0" VerticalAlignment="Top"/>
-        <Button Content="создать" HorizontalAlignment="Left" Margin="3,231,0,0" VerticalAlignment="Top" Width="153" Height="44" Click="CreateRect_Click"/>
-        <TextBox Name="Console_Txb" HorizontalAlignment="Left" Height="106" Margin="163,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="644" Text="Всего объектов: 0"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="153" Stroke="Black" VerticalAlignment="Top" Width="158" Margin="160,154,0,0"/>
-        <Label Content="Создать ромб" HorizontalAlignment="Left" Margin="204,172,0,0" VerticalAlignment="Top"/>
-        <Button Content="создать" HorizontalAlignment="Left" Margin="163,253,0,0" VerticalAlignment="Top" Width="153" Height="44" Click="CreateRhombus_Click"/>
-        <TextBox  Name="Rhomb_Txb" HorizontalAlignment="Left" Height="34" Margin="163,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="443,279,0,0" VerticalAlignment="Top" Width="75" Click="AddBuilder_Click"/>
-        <TextBox Name="list_txb" HorizontalAlignment="Left" Height="102" Margin="384,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
-        <Button Content="копировать" HorizontalAlignment="Left" Height="21" Margin="643,276,0,0" VerticalAlignment="Top" Width="121" Click="Button_Click"/>
+        Title="Lab_12" Height="176" Width="478">
+    <Grid Height="150" VerticalAlignment="Top" Margin="0,0,0,-5" >
+        <Button Content="Create object: Circle" HorizontalAlignment="Left" Margin="3,10,0,0" VerticalAlignment="Top" Width="153" Height="26" Click="CreateCircle_Click"/>
+        <Button Content="Create object: Square" HorizontalAlignment="Left" Margin="3,41,0,0" VerticalAlignment="Top" Width="153" Height="28" Click="CreateRect_Click"/>
+        <TextBox Name="Console_Txb" HorizontalAlignment="Left" Height="26" Margin="161,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Text="Count of object: 0"/>
+        <Button Content="Create object: Rhombus" HorizontalAlignment="Left" Margin="3,74,0,0" VerticalAlignment="Top" Width="153" Height="27" Click="CreateRhombus_Click"/>
+        <TextBox  Name="Rhomb_Txb" HorizontalAlignment="Left" Height="27" Margin="163,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Text="name_object"/>
+        <Button Content="Create object: Triangle" HorizontalAlignment="Left" Margin="3,106,0,0" VerticalAlignment="Top" Width="153" Click="AddBuilder_Click"/>
+        <TextBox Name="list_txb" HorizontalAlignment="Left" Height="60" Margin="283,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <Button Content="Information" HorizontalAlignment="Left" Height="20" Margin="163,106,0,0" VerticalAlignment="Top" Width="115" Click="Button_Click"/>
+        <Label Content="Console" HorizontalAlignment="Left" Margin="283,10,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
