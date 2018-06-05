@@ -26,7 +26,7 @@ namespace laba_12.prototype
         }
         public void GetInfo(TextBox textBox)
         {
-            MessageBox.Show("Height of rectangle " + height.ToString() + " and width of rectanle " + width.ToString());
+            textBox.Text = "Height of rectangle " + height.ToString() + " and width of rectanle " + width.ToString();
         }
     }
 
@@ -45,7 +45,7 @@ namespace laba_12.prototype
 
         public void GetInfo(TextBox textBox)
         {
-            MessageBox.Show("Radius of circle: " + radius.ToString());
+            textBox.Text = "Radius of circle: " + radius.ToString();
         }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A99677A2-B31A-41B6-999E-99D6DDC8A756}</ProjectGuid>
+    <ProjectGuid>{B3257478-46FE-48D5-8E54-EA0504B34D6C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Lab_12</RootNamespace>
-    <AssemblyName>Lab_12</AssemblyName>
+    <RootNamespace>Lab_13</RootNamespace>
+    <AssemblyName>Lab_13</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -36,8 +36,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -56,24 +54,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AbstractFactory\Add.cs" />
-    <Compile Include="AbstractFactory\CircleFactory.cs" />
-    <Compile Include="AbstractFactory\Delete.cs" />
-    <Compile Include="AbstractFactory\EditElem.cs" />
-    <Compile Include="AbstractFactory\Blue.cs" />
-    <Compile Include="AbstractFactory\EditColor.cs" />
-    <Compile Include="AbstractFactory\FigureFactory.cs" />
-    <Compile Include="AbstractFactory\Red.cs" />
+    <Compile Include="Color\ColorStyle.cs" />
+    <Compile Include="Color\RedColor.cs" />
+    <Compile Include="Color\YellowColor.cs" />
+    <Compile Include="Decorator\SquareDecorator.cs" />
+    <Compile Include="IComponent.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="MyObject.cs" />
+    <Compile Include="Shape\Shape.cs" />
+    <Compile Include="Shape\SquareS.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AbstractFactory\TriangleFactory.cs" />
+    <Compile Include="Adapter\IMove.cs" />
+    <Compile Include="Adapter\IMoveAdapter.cs" />
+    <Compile Include="Adapter\Square.cs" />
+    <Compile Include="Adapter\SquareAdapter.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AbstractFactory\FigureP.cs" />
+    <Compile Include="Decorator\Decorator.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

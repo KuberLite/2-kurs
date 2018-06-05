@@ -9,7 +9,6 @@ namespace laba_12.Builder
 
     class Flour
     {
-       
         public string Sort { get; set; }
     }
  
@@ -24,8 +23,7 @@ namespace laba_12.Builder
     }
 
     class Bread
-    {
-      
+    { 
         public Flour Flour { get; set; }
         public Salt Salt { get; set; }
         public Additives Additives { get; set; }

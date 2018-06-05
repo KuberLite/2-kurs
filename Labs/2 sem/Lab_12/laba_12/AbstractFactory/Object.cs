@@ -48,7 +48,7 @@ namespace laba_12.AbstractFactory
     }
 
      class NewObject
-    {
+     {
         private Objects objects;
         public NewObject(DrawFactory factory)
         {

@@ -6,8 +6,7 @@ using System.Windows;
 
 
 namespace laba_12
-{
-
+{ 
     public partial class MainWindow : Window
     {
         int count;
