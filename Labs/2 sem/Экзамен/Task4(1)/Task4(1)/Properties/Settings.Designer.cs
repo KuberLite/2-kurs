@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ekz_JSON.Properties
+namespace Task4_1_.Properties
 {
 
 
